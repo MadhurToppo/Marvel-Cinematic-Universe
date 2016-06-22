@@ -1,0 +1,53 @@
+
+<html lang="en">
+<head>
+	<title>Accio Code AngularJS Tutorial - Marvel Cinematic Universe Fan Page</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<!--<script src="angularjstutorial-deps.js"></script>
+	<script ssrc="angularjstutorial.js"></script>	-->
+	<script src="mcu_deps.js"></script>
+	<script src="mcu.js"></script>
+
+	<link rel="stylesheet" href="resources/css/mcu.css">
+</head>
+<body data-ng-app="mcu">
+
+<header>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">MCU</a>
+			</div>
+
+			<div class="collpase navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li data-ng-class="{active: isActive('/')}"><a href="#/films" title="Films">Films</a></li>
+					<li data-ng-class="{active: isActive('/')}"><a href="#/characters" title="Characters">Characters</a></li>
+					<li data-ng-class="{active: isActive('/')}"><a href="#/phases" title="Phases">Phases</a></li>
+				</ul>
+
+				<!-- right navbar -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#/contact" title="Contact">Contact</a></li>
+					<li><a href="#" title="Sign In">Sign In</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="mainContainer" maincontent>
+	<div class="mainContent" data-ng-view>
+	</div>
+</div>
+
+</body>
+</html>

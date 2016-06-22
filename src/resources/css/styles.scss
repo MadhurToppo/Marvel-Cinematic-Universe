@@ -1,0 +1,198 @@
+@import 'transitions';
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	@include tTransition;
+}
+
+dl {
+	margin: 10px 0;
+	background: #f3f4f5;
+	cursor: pointer;
+	@include tTransition;
+	&:hover {
+		@include tTransition;
+		background: #F11E22;
+		color: white;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		padding: 4px;
+		border: 1px solid #dadada;
+	}
+	dt {
+		font-weight: bold;
+		padding: 12px 0;
+	}
+	dd {
+		font-size: 0.86em;
+	}
+}
+
+.mainContainer {
+	height: 100%;
+}
+
+footer {
+	background: black;
+	padding: 20px 0;
+	color: white;
+	bottom: 0;
+	height: 60px;
+}
+
+.jumbotron {
+	margin-bottom: 0%;
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+	color: white;
+	text-shadow: black 0.3em 0.3em 0.3em;
+	background: url("../img/marvel_masthead.png");
+	background-color: #333;
+	h1 {
+		width: 50%;
+		margin: 10% 10px 10px 50%;
+	}
+}
+
+.filmsContainer {
+	.upcomingFilmsBox {
+		height: 900px;
+		overflow: hidden;
+		display: block;
+		margin: 0 0 12px 0;
+		h1 {
+			font-size: 2.55em;
+		}
+		h2 {
+			font-size: 0.88em;
+			line-height: 1.55em;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			padding: 4px;
+			border: 1px solid #dadada;
+		}
+		&:hover {
+			cursor: pointer;
+			img {
+				@include tTransition;
+				border-color: red;
+			}
+			h1 {
+				@include tTransition;
+				color: red;
+			}
+		}
+	}
+}
+
+.interiorPage {
+	padding: 50px 0 0 0;
+	h1 {
+		font-size: 2em;
+		padding: 0 30px;
+	}
+	br {
+		clear: both;
+		padding: 20px 0;
+		margin: 20px 0;
+		height: 30px;
+	}
+	.divider {
+		border: 1px dashed #333;
+		margin: 20px 0;
+		clear: both;
+	}
+	form {
+		margin: 20px 30px;
+	}
+
+	.contactContainer {
+		input[type="text"], textarea {
+			margin: 4px 8px;
+			border: 2px solid #000;
+			padding: 4px;
+			color: red;
+		}
+
+		textarea {
+			width: 100%;
+		}
+
+		input[type="button"]{
+			margin: 12px 8px;
+			background: grey;
+			color: #333;
+			text-align: center;
+			border: none;
+			&:hover {
+				background: #666;
+				color: white;
+			}
+		}
+
+		.bg-danger, .bg-success {
+			margin: 0;
+			padding: 12px;
+			background: red;
+			color: white;
+		}
+
+		.bg-success {
+			background: lightblue;
+			color: #dadada;
+		}
+	}
+}
+
+.nextFilmContainer {
+	margin: 8px 20px;
+	h1 {
+		padding: 0;
+		margin: 2px;
+		font-size: 3em;
+	}
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 1.05em;
+		color: #989898;
+		font-style: italic;
+	}
+	p {
+		font-size: 1.25em;
+		line-height: 1.35em;
+		padding: 20px 0;
+	}
+
+	ul {
+		li {
+			list-style: none;
+			margin: 0 0 12px -35px;
+		}
+	}
+	figure {
+		img {
+			width: 100%;
+			height: auto;
+			padding: 8px;
+			border: 1px solid #333;
+		}
+		figcaption {
+			color: #989898;
+			font-style: italic;
+			text-align: center;
+		}
+	}
+}

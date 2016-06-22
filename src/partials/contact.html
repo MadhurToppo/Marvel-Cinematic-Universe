@@ -1,0 +1,40 @@
+<div class="interiorPage">
+	<h1>Contact</h1>
+
+	<div class="contactContainer" data-ng-controller="ContactController">
+		<form name="contactform" validation data-ng-submit="submit(contactform)"
+			method="post"
+			action=""
+			role="form">
+			<div data-ng-hide="formError()" data-ng-class="result">
+				{{resultMessage}}
+			</div>
+
+			<!-- USER NAME -->
+			<div class="row">
+				<input type="text" name="name" id="name" data-ng-model="contactData.name"
+					placeholder="Full Name" data-ng-minlength="3" required />
+			</div>
+
+			<!-- USER EMAIL -->
+			<div class="row">
+				<input type="text" name="email" id="email" data-ng-model="contactData.email"
+					placeholder="name@email.com" data-ng-minlength="3" required />
+			</div>
+
+			<!-- USER MESSAGE -->
+			<div class="row">
+				<textarea data-ng-model="contactData.message" rows="4" id="inputMessage"
+					name="inputMessage" placeholder="I'm burdened with glorious purpose ..."></textarea>
+			</div>
+
+			<div class="row">
+				<!-- SUBMIT -->
+				<input type="button" class="btn btn-default"
+					data-ng-disabled="submitButtonDisabled"
+					data-ng-click="submit(contactform)"
+					value="Send" />
+			</div>
+		</form>
+	</div>
+</div>
