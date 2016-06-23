@@ -10,7 +10,7 @@ a {
 	@include tTransition;
 }
 
-dl {
+/*dl {
 	margin: 10px 0;
 	background: #f3f4f5;
 	cursor: pointer;
@@ -33,7 +33,7 @@ dl {
 	dd {
 		font-size: 0.86em;
 	}
-}
+}*/
 
 .mainContainer {
 	height: 100%;
@@ -65,10 +65,10 @@ footer {
 
 .filmsContainer {
 	.upcomingFilmsBox {
-		height: 900px;
+		/*height: 900px;
 		overflow: hidden;
 		display: block;
-		margin: 0 0 12px 0;
+		margin: 0 0 12px 0;*/
 		h1 {
 			font-size: 2.55em;
 		}
@@ -87,17 +87,17 @@ footer {
 			cursor: pointer;
 			img {
 				@include tTransition;
-				border-color: red;
+				border-color: blue;
 			}
 			h1 {
 				@include tTransition;
-				color: red;
+				color: blue;
 			}
 		}
 	}
 }
 
-.interiorPage {
+/*.interiorPage {
 	padding: 50px 0 0 0;
 	h1 {
 		font-size: 2em;
@@ -154,8 +154,9 @@ footer {
 			color: #dadada;
 		}
 	}
-}
+}*/
 
+/*
 .nextFilmContainer {
 	margin: 8px 20px;
 	h1 {
@@ -195,4 +196,4 @@ footer {
 			text-align: center;
 		}
 	}
-}
+}*/
